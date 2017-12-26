@@ -22,7 +22,6 @@ import Service from "../../services";
 export default {
   components: {
     Infos,
-
     QBtn
   },
   data() {
