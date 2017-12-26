@@ -55,7 +55,7 @@ Quasar.start(() => {
         _self.lat = position.coords.latitude
         _self.lng = position.coords.longitude
         var service = new Service()
-        _self.osm = await service.getBases('osm_recharge_voiture', _self.lat, _self.lng, 100)
+        _self.osm = await service.getBases( _self.lat, _self.lng)
         _self.loading = false
       },
       async geolocError () {
@@ -63,7 +63,7 @@ Quasar.start(() => {
         console.log('geoloc error')
         //  alert('geoloc error')
         var service = new Service()
-        _self.osm = await service.getBases('osm_recharge_voiture', _self.lat, _self.lng, 100)
+        _self.osm = await service.getBases(_self.lat, _self.lng)
         console.log(_self.osm)
         _self.loading = false
       },
