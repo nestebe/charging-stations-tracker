@@ -1,4 +1,4 @@
-[Demo(http://demo.dev-worker.com/charging-stations-tracker)
+[Demo(http://demo.dev-worker.com/charging-stations-tracker)]
 ## Build Setup
 
 ``` bash
