@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.19.2",
     "babel-runtime": "^6.0.0",
     "quasar-extras": "0.x",
     "quasar-framework": "^0.14.9",
