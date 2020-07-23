@@ -98,16 +98,16 @@ export default {
     },
     buidAddress(addr) {
       var result = ""
-      if (addr.AddressLine1 != null) {
+      if (addr.AddressLine1) {
         result += addr.AddressLine1 + " "
       }
-      if (addr.AddressLine2 != null) {
+      if (addr.AddressLine2) {
         result += addr.AddressLine2 + " "
       }
-      if (addr.Postcode != null) {
+      if (addr.Postcode) {
         result += addr.Postcode + " "
       }
-      if (addr.Town != null) {
+      if (addr.Town) {
         result += addr.Town + " "
       } 
       

@@ -7,15 +7,11 @@ class Service {
   }
   // API openchargemap v2
   async getBases(lat, lng) {
-    var _self = this
-
-    return axios.get(_self.api + '?output=json&' + 'latitude=' + lat + '&longitude=' + lng + '&distance=100')
-      .then(response => {
-        return response.data
-      })
-      .catch(e => {
-        return []
-      })
+    try {
+      return (await axios.get(this.api + '?output=json&' + 'latitude=' + lat + '&longitude=' + lng + '&distance=100')).data
+    } catch (err) {
+      return []
+    }
   }
 }
 

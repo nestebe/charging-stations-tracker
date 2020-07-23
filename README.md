@@ -8,10 +8,10 @@ $ npm install
 
 
 # serve with hot reload at localhost:8080
-$ quasar dev
+$ npm run dev
 
 # build for production with minification
-$ quasar build
+$ npm run build
 ```
 
 ![pic](https://github.com/nestebe/charging-stations-tracker/blob/master/captures/1.png "")
